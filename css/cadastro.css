@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+:root {
+  --primary-color: #c00606;
+  --primary-hover: #450505
+}
+
+body {
+  
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: 
+    radial-gradient(
+        circle at center,
+        rgba(100,0,0,0.35),
+        transparent 45%  
+    ),
+    linear-gradient(
+        to bottom,
+        #450505 16.62%,
+        #0A0A0A 85.61%
+    );
+}
+
+.form-container {
+  width: 100%;
+  max-width: 420px;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  width: 90px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+}
+
+/* Header Text */
+.card-header {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.card-header h2 {
+  color: rgb(192, 17, 17);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p {
+  color: rgb(207, 197, 185);
+  font-size: 0.95rem;
+}
+
+/* Form Layout Fields */
+.input-group {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: rgb(197, 44, 44);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Interactive Input States */
+.input-group input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Action Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 0.60rem;
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: rgb(218, 207, 207);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-hover);
+}
